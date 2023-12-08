@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.container .card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.container .card .HP {
+    width: 80px;
+    text-align: center;
+    padding: 8px 0;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.container .card h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.container .card .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.container .card .types span, .HP {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.container .card .types span{
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.container .card .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.color_card {
+    background: radial-gradient(circle at 50% 00%, #272731 40%, #1F1F29 40%);
+}
+
+.color_span {
+    background-color: #272731;
+}
+
+pagination-controls {
+    text-align: center;
+}

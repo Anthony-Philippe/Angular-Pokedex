@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card color_card" *ngFor="let pokemon of pokemons | paginate: {itemsPerPage: 10, currentPage: page, totalItems: totalPokemons }">
+        <p class="HP">
+            <span>HP</span> {{ pokemon.stats[0].base_stat }}
+        </p>
+        <img [src]="pokemon.sprites.front_default" alt="Pokomon">
+        <h2>{{ pokemon.name }}</h2>
+        
+        <div class="types">
+            <span class="color_span" *ngFor="let type of pokemon.types">
+                {{ type.type.name }}
+            </span>
+        </div>
+        <div class="stats">
+            <p>
+                <b>Attack</b> {{ pokemon.stats[1].base_stat }}
+            </p>
+            <p>
+                <b>Defense</b> {{ pokemon.stats[2].base_stat }}
+            </p>
+            <p>
+                <b>Speed</b> {{ pokemon.stats[5].base_stat }}
+            </p>
+        </div>
+    </div>
+</div>
+
+<pagination-controls (pageChange)="page = $event; pokemons = []; getPokemons()"></pagination-controls>

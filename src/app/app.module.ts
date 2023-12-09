@@ -9,6 +9,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
     NavbarComponent,
     HomeComponent,
     ListComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SearchPageComponent,
+    CategoryPageComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,

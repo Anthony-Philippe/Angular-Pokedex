@@ -1,0 +1,93 @@
+.card {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='250' height='350' preserveAspectRatio='none' viewBox='0 0 250 350'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1469%26quot%3b)' fill='none'%3e%3crect width='250' height='350' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1470%26quot%3b)'%3e%3c/rect%3e%3cuse xlink:href='%23SvgjsPath1471' x='30' y='30' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1472' x='30' y='90' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1471' x='30' y='150' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1471' x='30' y='210' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1473' x='30' y='270' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1473' x='30' y='330' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='90' y='30' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='90' y='90' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1476' x='90' y='150' stroke='rgba(126%2c 132%2c 142%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1472' x='90' y='210' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='90' y='270' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1473' x='90' y='330' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='150' y='30' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='150' y='90' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='150' y='150' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='150' y='210' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1473' x='150' y='270' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='150' y='330' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='210' y='30' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1476' x='210' y='90' stroke='rgba(126%2c 132%2c 142%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='210' y='150' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='210' y='210' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='210' y='270' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1473' x='210' y='330' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='270' y='30' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1474' x='270' y='90' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='270' y='150' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='270' y='210' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1471' x='270' y='270' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1475' x='270' y='330' stroke='rgba(126%2c 132%2c 142%2c 1)'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1469'%3e%3crect width='250' height='350' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1470'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(31%2c 31%2c 41%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1473'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1471'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1474'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1472'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1475'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1476'%3e%3c/path%3e%3c/defs%3e%3c/svg%3e");
+    width: 200px;
+    height: 325px;
+    padding: 10px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.HP {
+    width: 50px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.img_Container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img_Container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transform: translateY(-20px);
+    margin-bottom: 0;
+}
+
+.card .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.card .types span,
+.HP {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.card .types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 4px solid #1a1a38;
+    border-radius: 25px;
+}
+
+.stats {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: -20px;
+}

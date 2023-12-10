@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="content">
+        <span class="HP">
+            HP {{ pokemon.stats[0].base_stat }}
+        </span>
+        <div class="header">
+            <div class="img_Container">
+                <img [src]="pokemon.sprites.front_default" alt="Pokémon">
+            </div>
+            <h2>{{ pokemon.name }}</h2>
+        </div>
+        <div class="body">
+            <div class="types">
+                <span *ngFor="let type of pokemon.types">
+                    {{ type.type.name }}
+                </span>
+            </div>
+            <div class="stats">
+                <p> Attack {{ pokemon.stats[1].base_stat }} </p>
+                <p> Defense {{ pokemon.stats[2].base_stat }} </p>
+                <p> Speed {{ pokemon.stats[5].base_stat }} </p>
+            </div>
+        </div>
+    </div>
+</div>

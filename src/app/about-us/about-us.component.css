@@ -1,0 +1,59 @@
+/* about-us.component.css */
+
+.card-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    transition: all 0.5s ease;
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1158%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1159%26quot%3b)'%3e%3c/rect%3e%3cpath d='M0 0L51.61 0L0 164.76z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 164.76L51.61 0L158.57 0L0 210.48z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 210.48L158.57 0L187.39999999999998 0L0 389.38z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 389.38L187.39999999999998 0L1017.6 0L0 395.96z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1440 560L1299.74 560L1440 444.13z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1440 444.13L1299.74 560L606.4300000000001 560L1440 211.63z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1440 211.63L606.4300000000001 560L263.68000000000006 560L1440 81.03z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1440 81.02999999999997L263.68000000000006 560L145.65000000000006 560L1440 70.52999999999997z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1158'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1159'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(50%2c 50%2c 50%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.8s ease;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.profile-image i {
+    font-size: 100px;
+}
+
+.name {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-inline: 35px;
+    text-align: left;
+}
+
+.text-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: left;
+    color: black;
+  }

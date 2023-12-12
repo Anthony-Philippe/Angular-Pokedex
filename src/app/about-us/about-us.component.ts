@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
-
+  people = [
+    {
+      firstName: 'Alexander',
+      lastName: 'Rougier',
+      description: 'blablabla',
+    },
+    {
+      firstName: 'Anthony',
+      lastName: 'Philippe',
+      description: 'blablablab bal',
+    },
+    {
+      firstName: 'Florian',
+      lastName: 'Amiot',
+      description: 'blablablablaalbla ',
+    }
+  ];
 }

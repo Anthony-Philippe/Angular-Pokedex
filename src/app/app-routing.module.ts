@@ -7,6 +7,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { DetailComponent } from './detail/detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'category', component: CategoryPageComponent },
   { path: 'pokedex', component: PokedexComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'details/:name', component: DetailComponent },
 ];
 
 @NgModule({

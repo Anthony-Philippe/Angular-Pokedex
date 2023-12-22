@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    height: 6.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 2.5rem 5rem;
+}
+
+.column a {
+    padding-left: 50px;
+    text-decoration: none;
+    color: #E1E1E5;
+}

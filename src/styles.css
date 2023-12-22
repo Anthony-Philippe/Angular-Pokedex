@@ -1,6 +1,7 @@
 body {
-    background-color: #1F1F29;
-    color: #E1E1E5;
-    margin: 0;
-    padding: 0;
-  }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1102%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(31%2c 31%2c 41%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c525 C 128%2c556 384%2c687.2 640%2c680 C 896%2c672.8 1024%2c477.8 1280%2c489 C 1536%2c500.2 1792%2c686.6 1920%2c736L1920 1080L0 1080z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1102'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  color: #E1E1E5;
+  margin: 0;
+  padding: 0;
+}

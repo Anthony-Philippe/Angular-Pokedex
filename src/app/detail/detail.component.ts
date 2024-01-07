@@ -12,7 +12,7 @@ export class DetailComponent implements OnInit {
   constructor(private activeRoute: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
-    const name = this.activeRoute.snapshot.paramMap.get('name')
+    const name = this.activeRoute.snapshot.paramMap.get('name') ?? '';
 
     this.dataService.getMoreData(name).subscribe(
       (data) => {

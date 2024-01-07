@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DetailComponent } from './detail/detail.component';
     NavbarComponent,
     HomeComponent,
     ListComponent,
+    SearchPageComponent,
     DetailComponent
   ],
   imports: [

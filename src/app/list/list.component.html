@@ -4,7 +4,7 @@
             <span>HP</span> {{ pokemon.stats[0].base_stat }}
         </p>
         <img [src]="pokemon.sprites.front_default" alt="Pokomon">
-        <h2>{{ pokemon.name }}</h2>
+        <h2 [routerLink]="['/details', pokemon.name]">{{ pokemon.name }}</h2> 
         
         <div class="types">
             <span class="color_span" *ngFor="let type of pokemon.types">

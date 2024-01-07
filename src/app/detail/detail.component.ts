@@ -1,3 +1,4 @@
+// Importation des modules et composants
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../service/data.service';
@@ -8,15 +9,16 @@ import { DataService } from '../service/data.service';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-  pokemon: any
+  pokemon: any;
+
   constructor(private activeRoute: ActivatedRoute, private dataService: DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { // On récupère le nom du pokémon dans l'URL
     const name = this.activeRoute.snapshot.paramMap.get('name') ?? '';
 
-    this.dataService.getMoreData(name).subscribe(
+    this.dataService.getMoreData(name).subscribe( // On récupère les données du pokémon
       (data) => {
-        this.pokemon = data;
+        this.pokemon = data; // On stocke les données du pokémon dans une variable
       }
     )
   }

@@ -7,7 +7,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { DetailComponent } from './detail/detail.component';
 
-const routes: Routes = [
+// Création des routes de l'application 
+
+const routes: Routes = [ 
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchPageComponent },

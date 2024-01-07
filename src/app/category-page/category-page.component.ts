@@ -1,7 +1,5 @@
+// Importation des modules et composants
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { FormControl } from '@angular/forms';
-import { Validators } from '@angular/forms';
 import { DataService } from '../service/data.service';
 
 @Component({
@@ -10,9 +8,9 @@ import { DataService } from '../service/data.service';
   styleUrls: ['./category-page.component.css']
 })
 export class CategoryPageComponent implements OnInit {
-  listPokemonsAvailable!: any[];
+  listPokemonsAvailable!: any[]; // On stocke les données des pokémons
   listPokemonsDiplayed!: any[];
-  selectedCategory: string = '';
+  selectedCategory: string = ''; // On stocke la catégorie sélectionnée
 
   page = 1;
   itemsPerPage = 12;
@@ -24,7 +22,7 @@ export class CategoryPageComponent implements OnInit {
     this.getPokemons();
   }
 
-  getPokemons() {
+  getPokemons() { // Méthode pour récupérer les pokémons
     const offset = (this.page - 1) * this.itemsPerPage;
     this.dataService.getPokemons(this.totalPokemons, offset).subscribe((pokemons: any[]) => {
       this.listPokemonsAvailable = pokemons;
@@ -32,15 +30,15 @@ export class CategoryPageComponent implements OnInit {
     });
   }
 
-  onCategoryChange(event: any) {
+  onCategoryChange(event: any) { // Méthode pour récupérer la catégorie sélectionnée
     this.selectedCategory = event.target.value;
     this.filterPokemonByCategory();
   }
 
-  filterPokemonByCategory() {
-    if (!this.selectedCategory) {
+  filterPokemonByCategory() { // Méthode pour filtrer les pokémons par catégorie
+    if (!this.selectedCategory) { // Si aucune catégorie n'est sélectionnée, on affiche aucun pokémons
       this.listPokemonsDiplayed = this.listPokemonsAvailable;
-    } else {
+    } else { // Sinon, on affiche les pokémons de la catégorie sélectionnée
       this.listPokemonsDiplayed = this.listPokemonsAvailable.filter((pokemon) =>
         pokemon.types[0].type.name.toLowerCase().includes(this.selectedCategory.toLowerCase())
       );

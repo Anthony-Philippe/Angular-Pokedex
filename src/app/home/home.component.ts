@@ -1,3 +1,4 @@
+// Importation des modules et composants
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../service/data.service';
 
@@ -7,7 +8,8 @@ import { DataService } from '../service/data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  @Input() pokemons!: any[]
+  @Input() pokemons!: any[] // On récupère les pokémons depuis le composant parent
+
   page = 1;
   items = 3;
   totalPokemons!: number;
@@ -18,7 +20,7 @@ export class HomeComponent implements OnInit {
     this.loadPokemons();
   }
 
-  loadPokemons() {
+  loadPokemons() { // Méthode pour récupérer les pokémons aléatoirements
     const limit = this.items;
     const offset = Math.floor(Math.random() * 1000);
 

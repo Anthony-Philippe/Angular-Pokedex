@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  @Input() pokemon: any;
+  @Input() pokemon: any; // On récupère le pokémon depuis le composant parent
 
   constructor() { }
 }

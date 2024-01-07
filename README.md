@@ -1,27 +1,46 @@
-# V1
+# Projet Angular M1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+### Installation
+- Décomprésser le fichier zip
+- Ouvrir un terminal dans le dossier du projet à la racine
+- `npm install` pour installer les dépendances.
+- `ng serve` pour lancer le serveur de développement.
+- Ouvrir un navigateur et aller à l'adresse `http://localhost:4200/`.
 
-## Development server
+*Le serveur de développement se relance automatiquement à chaque modification du code source.
+Il faut avoir nodejs et npm installé pour lancer le projet*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Auteurs
 
-## Code scaffolding
+- Alexander Rougier
+- Florian Amiot
+- Anthony Philippe
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### API
 
-## Build
+Nous avons choisi une API publique: **PokéAPI**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Il s'agit d'une API REST qui permet de récupérer des informations sur les pokémons.
 
-## Running unit tests
+Elle permet de récupérer des informations sur les pokémons notamment les attaques, les types, les capacités, les évolutions, les statistiques etc...
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+On récupère les données en JSON via des requêtes HTTP en méthode GET.
 
-## Running end-to-end tests
+Lien de l'API: https://pokeapi.co/
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Application
 
-## Further help
+Nous avons créé une application Angular qui permet de récupérer des informations sur les pokémons.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Elle est divisé en 4 pages:
+
+- La page d'accueil qui sert principalement de vitrine, mais il y a aussi un affichage de 3 pokemons aléatoires.
+- La page de recherche qui permet de rechercher un pokemon par son nom.
+- La page de catégorie qui contient un sélecteur de catégorie et qui affiche ensuite les pokemons de cette catégorie.
+- La page About Us qui contient des informations sur nous.
+
+Il y a également une fonction de détails qui permet d'afficher les détails de chaque pokémon en cliquant sur sa carte.
+
+L'application utilise les fonctionnalités d'angular vu en cours tels que les composants, les services, les routes, interfaces...
+
+Nous avons également choisit d'utiliser seulement du css pour le style de l'application.

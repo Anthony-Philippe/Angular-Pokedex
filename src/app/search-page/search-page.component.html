@@ -1,7 +1,6 @@
-<app-list [pokemons]="listPokemonsDiplayed"></app-list>
+<form [formGroup]="searchForm">
+    <input [formControl]="searchCtrl" placeholder="Rechercher un pokemon par nom">
+</form>
 
-<div>
-    <form [formGroup]="searchForm">
-        Chercher des Pokémons : <input [formControl]="searchCtrl">
-    </form>
-</div>
+<app-list [pokemons]="listPokemonsDiplayed"></app-list>
+<pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>

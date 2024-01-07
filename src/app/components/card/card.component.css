@@ -1,0 +1,93 @@
+.card {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 325px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: #272731;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.HP {
+    width: 50px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.img_Container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img_Container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transform: translateY(-20px);
+    margin-bottom: 0;
+}
+
+.card .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.card .types span,
+.HP {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.card .types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 4px solid #1a1a38;
+    border-radius: 25px;
+}
+
+.stats {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: -20px;
+}

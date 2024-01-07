@@ -1,4 +1,22 @@
-:host {
-    display: flex;
-    min-height: 80vh;
-  }
+.container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 8px;
+}
+
+pagination-controls {
+  text-align: center;
+}

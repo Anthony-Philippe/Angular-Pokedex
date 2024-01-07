@@ -14,7 +14,7 @@ export class AboutUsComponent {
   creator2PhotoUrl: string = 'assets/creators/creator2.jpg';
 
   creator3Name: string = 'Anthony Philippe';
-  creator3PhotoUrl: string = 'lien_vers_la_photo_3.jpg';
+  creator3PhotoUrl: string = 'assets/creators/creator3.jpg';
 
 }
 

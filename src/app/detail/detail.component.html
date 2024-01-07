@@ -1,4 +1,46 @@
-<p>detail works!</p>
-<ng-container *ngIf="pokemon != null">
-    {{ pokemon.name }}
-</ng-container>
+<div class="container">
+    <app-card [pokemon]="pokemon"></app-card>
+
+    <div class="details">
+        <ng-container *ngIf="pokemon != null">
+            <div class="card">
+                <div class="content">
+                    <div class="header">
+                        <h2>Abilitées</h2>
+                    </div>
+                    <div class="body">
+                        <div class="abilities">
+                            <span *ngFor="let ability of pokemon.abilities">
+                                <a style="text-transform: uppercase;">{{ ability.ability.name }} - </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="header">
+                        <h2>Informations</h2>
+                    </div>
+                    <div class="body">
+                        <p>Id: {{ pokemon.id }}</p>
+                        <p>Poids: {{ pokemon.weight }} Kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="header">
+                        <h2>Autres statistiques</h2>
+                    </div>
+                    <div class="body">
+                        <p> Special Attack {{ pokemon.stats[3].base_stat }} </p>
+                        <p> Special Defense {{ pokemon.stats[4].base_stat }} </p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+
+</div>

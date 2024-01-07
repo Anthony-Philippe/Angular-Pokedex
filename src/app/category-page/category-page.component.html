@@ -1,1 +1,25 @@
-<p>category-page works!</p>
+<select style="text-transform: uppercase;" (change)="onCategoryChange($event)">
+    <option value="">Sélectionner une catégorie</option>
+    <option value="grass">grass</option>
+    <option value="fire">fire</option>
+    <option value="water">water</option>
+    <option value="poison">poison</option>
+    <option value="electric">electric</option>
+    <option value="flying">flying</option>
+    <option value="bug">bug</option>
+    <option value="normal">normal</option>
+    <option value="psychic">psychic</option>
+    <option value="fairy">fairy</option>
+    <option value="fighting">fighting</option>
+    <option value="rock">rock</option>
+    <option value="steel">steel</option>
+    <option value="ice">ice</option>
+    <option value="ghost">ghost</option>
+    <option value="ground">ground</option>
+    <option value="dragon">dragon</option>
+    <option value="dark">dark</option>
+</select>
+
+<div *ngIf="selectedCategory">
+    <app-list [pokemons]="listPokemonsDiplayed"></app-list>
+</div>

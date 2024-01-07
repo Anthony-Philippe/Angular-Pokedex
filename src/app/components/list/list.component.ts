@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { DataService } from '../service/data.service';
+import { DataService } from '../../service/data.service';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +9,7 @@ import { DataService } from '../service/data.service';
 export class ListComponent implements OnInit, OnChanges {
   @Input() pokemons!: any[]
   page = 1;
-  itemsPerPage = 25;
+  itemsPerPage = 12;
   totalPokemons!: number;
 
   constructor(

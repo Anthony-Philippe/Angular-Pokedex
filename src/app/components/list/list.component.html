@@ -1,0 +1,8 @@
+<div class="container">
+
+  <app-card
+    *ngFor="let pokemon of pokemons | paginate: { itemsPerPage: 12, currentPage: page, totalItems: totalPokemons }"
+    [pokemon]="pokemon" [routerLink]="['/details', pokemon.name]">
+  </app-card>
+
+</div>

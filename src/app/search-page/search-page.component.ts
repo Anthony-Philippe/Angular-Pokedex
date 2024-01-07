@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, UntypedFormGroup, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { DataService } from '../service/data.service';
@@ -9,11 +9,15 @@ import { DataService } from '../service/data.service';
   templateUrl: './search-page.component.html',
   styleUrls: ['./search-page.component.css']
 })
-export class SearchPageComponent {
-  searchForm: FormGroup; // Fix the type declaration and remove the incorrect initialization
-  searchCtrl: FormControl = new FormControl(''); // Add searchCtrl property
+export class SearchPageComponent implements OnInit {
+  searchForm: FormGroup;
+  searchCtrl: FormControl = new FormControl('');
   listPokemonsAvailable!: any[]
   listPokemonsDiplayed!: any[]
+
+  page = 1;
+  itemsPerPage = 12;
+  totalPokemons = 952;
 
   constructor(private formBuilder: FormBuilder, private dataService: DataService) {
     this.searchCtrl = new FormControl('', {
@@ -22,32 +26,39 @@ export class SearchPageComponent {
     });
 
     this.searchForm = this.formBuilder.group({
-      search: this.searchCtrl
+      search: this.searchCtrl,
     });
 
     this.searchCtrl.valueChanges.subscribe((searchTerm: string) => {
       this.filterPokemonsByName(searchTerm);
     });
+
   }
 
   ngOnInit() {
-    // Initialize your data or fetch it from your service
-    this.dataService.getPokemons(10, 1).subscribe((pokemons: any[]) => {
+    this.getPokemons();
+  }
+
+  getPokemons() {
+    const offset = (this.page - 1) * this.itemsPerPage;
+    this.dataService.getPokemons(this.totalPokemons, offset).subscribe((pokemons: any[]) => {
       this.listPokemonsAvailable = pokemons;
       this.listPokemonsDiplayed = pokemons;
     });
   }
 
   filterPokemonsByName(searchTerm: string) {
-    console.log(searchTerm);
     if (!searchTerm) {
-      // If the search term is empty, show all pokemons
       this.listPokemonsDiplayed = this.listPokemonsAvailable;
     } else {
-      // Filter pokemons by name using the search term
       this.listPokemonsDiplayed = this.listPokemonsAvailable.filter((pokemon) =>
         pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
+  }
+
+  onPageChange(event: number) {
+    this.page = event;
+    this.getPokemons();
   }
 }

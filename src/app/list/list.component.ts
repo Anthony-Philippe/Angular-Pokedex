@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from '../service/data.service';
 
 @Component({
@@ -6,23 +6,34 @@ import { DataService } from '../service/data.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent implements OnInit, OnChanges {
-  @Input() pokemons!: any[]
+export class ListComponent implements OnInit {
+  pokemons: any[] = [];
   page = 1;
-  itemsPerPage = 25;
+  itemsPerPage = 10;
   totalPokemons!: number;
 
   constructor(
     private dataService: DataService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
+    this.getPokemons();
   }
 
-  ngOnChanges(): void {
-    if (this.pokemons != null) {
-      this.totalPokemons = this.pokemons.length
-    }
+  getPokemons() {
+    const offset = (this.page - 1) * this.itemsPerPage;
+    this.dataService.getPokemons(this.itemsPerPage, offset)
+      .subscribe((response: any) => {
+        this.totalPokemons = response.count;
+        this.pokemons = [];
+        response.results.forEach((result: { name: string; }) => {
+          this.dataService.getMoreData(result.name)
+            .subscribe((uniqResponse: any) => {
+              this.pokemons.push(uniqResponse);
+              console.log(this.pokemons);
+            });
+        });
+      });
   }
 
 }

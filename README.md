@@ -13,6 +13,7 @@ Il faut avoir nodejs et npm installé pour lancer le projet*
 ### Auteurs
 
 - Anthony Philippe
+- Florian Amiot
 
 ### API
 
